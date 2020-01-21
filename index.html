@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>type test - cat facts</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-dark mt-2" id="time" role="alert">
+            click start to type
+          </div>
+    <div class="alert alert-info " id="score">score: 0</div>
+    <button onclick="start()" class="btn btn-warning">Start Typing</button>
+    <h1 class="col col-12 mt-5 fact" id="fact"></h1>
+        <form>
+            <div class="form-group">
+                <textarea class="form-control mt-4" onkeyup="check()" id="text" rows="10" cols="40"></textarea>
+            </div>
+      </form>
+    </div>
+    </body>
+<script src="./js/script.js"></script>
+</html>
